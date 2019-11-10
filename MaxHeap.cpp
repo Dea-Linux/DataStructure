@@ -80,6 +80,7 @@ void adjustUp(Heap& heap, int index) {
 			if (temp > heap.arr[parent]) {
 				heap.arr[index] = heap.arr[parent];
 				heap.arr[parent] = temp;
+				index = parent;
 			}
 			else {
 				break;
